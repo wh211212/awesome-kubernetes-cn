@@ -1,51 +1,51 @@
-Awesome-Kubernetes
-=======================================================================
+# Awesome-kubernetes-cn
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Build Status](https://travis-ci.org/ramitsurana/awesome-kubernetes.svg?branch=master)](https://travis-ci.org/ramitsurana/awesome-kubernetes)
-[![Build Status](https://semaphoreci.com/api/v1/ramitsurana/awesome-kubernetes/branches/master/badge.svg)](https://semaphoreci.com/ramitsurana/awesome-kubernetes)
+> Kubernetes 资源大全中文版：包括Kubernetes安装、Kubernetes管理、Kubernetes版本更新、Kubernetes社区
+
+----------------------------------------------------------
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/wh211212/awesome-kubernetes-cn)
+[![Build Status](https://travis-ci.org/wh211212/awesome-kubernetes-cn.svg?branch=master)](https://travis-ci.org/wh211212/awesome-kubernetes-cn)
 [![License](https://img.shields.io/badge/License-CC%204.0-brightgreen.svg?style=flat-square)](http://creativecommons.org/licenses/by-nc/4.0/)
-[![Docker Build Status](https://img.shields.io/docker/build/ramitsurana/awesome-kubernetes.svg?style=flat-square)](https://hub.docker.com/r/ramitsurana/awesome-kubernetes)
-[![Slack Widget](https://camo.githubusercontent.com/984828c0b020357921853f59eaaa65aaee755542/68747470733a2f2f73332e65752d63656e7472616c2d312e616d617a6f6e6177732e636f6d2f6e6774756e612f6a6f696e2d75732d6f6e2d736c61636b2e706e67)](https://kubernetes.slack.com/messages/awesome-kubernetes)
 
 
-A curated list for awesome kubernetes sources
-Inspired by [@sindresorhus' awesome](https://github.com/sindresorhus/awesome)
+kubernetes 资源收集整理、灵感来自：
+[@sindresorhus' awesome](https://github.com/sindresorhus/awesome)
+[@ramitsurana' awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
 
-![final-k8s](https://cloud.githubusercontent.com/assets/8342133/26794201/62c1a006-4a3e-11e7-8bf9-4449814648f2.png)
+![awesome-k8s](http://img.blog.csdn.net/20180207110352498?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2gyMTEyMTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-> "Talent wins games, but teamwork and intelligence wins championships."
->
-> -- Michael Jordan
+------------------------------------------------------------
+# 每天的小目标
 
-Without the help from these [amazing contributors](https://github.com/ramitsurana/awesome-kubernetes/graphs/contributors),
-building this awesome-repo would never has been possible. Thank You very much guys !!
+- 基于[awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)资源列表、对其进行翻译整理并完善增加更多Kubernetes中文学习资源。
 
-**Thanks to Gitbook.This awesome list can now be downloaded and read in the form of a book.Check it out -->  https://www.gitbook.com/book/ramitsurana/awesome-kubernetes/ .Keep Learning Keep Sharing !!**
+------------------------------------------------------------
+# 如何为列表贡献新资源？
 
-**If you see a package or project here that is no longer maintained or is not a good fit, please submit a pull request to improve this file. Thank you!**
+欢迎大家为列表贡献高质量的新资源，提交 PR 时请参照以下要求：
 
-## What is Kubernetes? :ship:
+- 请确保推荐的资源自己使用过
+- 提交 PR 时请注明推荐理由
+资源列表管理收到 PR 请求后，会定期（每周）在微博转发本周提交的 PR 列表，并在微博上面听取使用过这些资源的意见、确认通过后，会加入资源大全。
 
-> Kubernetes is an open source orchestration system for Docker containers. It handles scheduling onto nodes in a compute cluster and actively manages workloads to ensure that their state matches the users declared intentions. Using the concepts of "labels" and "pods", it groups the containers which make up an application into logical units for easy management and discovery.
+感谢您的贡献！
+------------------------------------------------------------
+## 什么是Kubernetes？
+[Kubernetes](https://kubernetes.io/)是一个开源系统，用于自动化集装箱化应用程序的部署，扩展和管理.
 
-_Source:_ [What is Kubernetes](http://kubernetes.io/)
 
+## k8s历史:
 
-## History:
-
-**Kubernetes is known to be a descendant of Google's system BORG**
+**Kubernetes被认为是Google BORG系统的后裔**
 
 > The first unified container-management system developed at Google was the system we internally call Borg.
 It was built to manage both long-running services and batch jobs, which had previously been handled by two separate
 systems: Babysitter and the Global Work Queue. The latter’s architecture strongly influenced Borg, but was focused on
 batch jobs; both predated Linux control groups.
 
-_Source:_ [Kubernetes Past](http://research.google.com/pubs/archive/44843.pdf)
+## 诞生日期:
 
-## Date of Birth:
-
-Kubernetes celebrates its birthday every year on 21st July. Kubernetes 1.0 was released on July 21 2015, after being first announced to the public at [Dockercon in June 2014](https://www.youtube.com/watch?v=YrxnVKZeqK8).
+Kubernetes每年7月21日庆祝生日。 Kubernetes 1.0于2014年6月在Dockercon首次向公众公布，于2015年7月21日发布。[Dockercon in June 2014](https://www.youtube.com/watch?v=YrxnVKZeqK8).
 
 ## Roadmap
 
@@ -54,11 +54,10 @@ download the awesome kubernetes release up to a certain period of time, The rele
 
 -----------------------------------------------------------------------
 
-
-Menu
+资源列表
 =======================================================================
 
-* [Starting Point](#starting-point)
+* [Starting Point](#初始Kubernetes)
 * [Installation / Setup](#installation-or-setup)
   * [Kubernetesv1.8](#kubernetesv1.8)
 * [Installers](#installers)
@@ -82,7 +81,7 @@ Menu
 * [Monitoring Services](#monitoring-services)
 * [Testing](#testing)
 * [Continuous Delivery](#continuous-delivery)
-* [Serverless Implementations](#serverless-implementations)
+* [Serverless Implementation](#serverless-implementation)
 * [Operators](#operators)
 * [Custom Schedulers](#custom-schedulers)
 * [Container Support](#container-support)
@@ -106,7 +105,6 @@ Menu
 * [Operating System](#operating-system)
 * [YAML/JSON Config](#yamljson-config)
 * [Tuning](#tuning)
-* [Backup and Disaster Recovery](#backup-and-disaster-recovery)
 * [Raspberry Pi](#raspberry-pi)
 * [Books](#books) :books:
 * [Slide Presentations](#slide-presentations)
@@ -124,8 +122,7 @@ Menu
 
 -----------------------------------------------------------------------
 
-
-Starting Point
+初始Kubernetes
 =======================================================================
 
 *A place that marks the beginning of a journey*
@@ -144,11 +141,9 @@ Starting Point
 * [The Children's Illustrated Guide to Kubernetes](http://deis.com/blog/2016/kubernetes-illustrated-guide/) by [Deis](https://github.com/deis)
 * [The ‘kubectl run’ command](http://medium.com/@mhausenblas/the-kubectl-run-command-27c68de5cb76#.mlwi5an7o) by [Michael Hausenblas](https://twitter.com/mhausenblas)
 * [Docker Kubernetes Lab Handbook](https://github.com/xiaopeng163/docker-k8s-lab) by [Peng Xiao](https://twitter.com/xiaopeng163)
-* [Curated Resources for Kubernetes](https://hackr.io/tutorials/learn-kubernetes)
-* [Kubernetes Comic](https://cloud.google.com/kubernetes-engine/kubernetes-comic/) by [Google Cloud Plaatform](https://cloud.google.com/)
 
 
-Installation / Setup
+安装 、设置
 =======================================================================
 
 *Helpful Installation/Setup articles for Production Usage in Kubernetes*
@@ -159,11 +154,11 @@ Installation / Setup
 
 
 
-Installers
+安装教程
 =======================================================================
 
 
-* [Minikube](https://github.com/kubernetes/minikube) - Run Kubernetes locally
+* [Minikube](https://github.com/kubernetes/minikube) - 在本地运行Kubernetes
 * [Kops](https://github.com/kubernetes/kops) - OS Agnostique - AWS - [Apache-2.0](https://github.com/kubernetes/kops/blob/master/LICENSE)
 * [Kube-deploy](https://github.com/kubernetes/kube-deploy)
 * [Kubeadm](http://kubernetes.io/docs/admin/kubeadm/) - OS Agnostique - Cloud Agnostique - [Apache-2.0](https://github.com/kubernetes/kubeadm/blob/master/LICENSE)
@@ -182,21 +177,20 @@ Installers
 * [Kube-ansible](https://github.com/kairen/kube-ansible) - OS Agnostique - Cloud Agnostique - [MIT](https://github.com/kairen/kube-ansible/blob/master/LICENSE)
 * [Kubernetes-Saltstack](https://github.com/valentin2105/Kubernetes-Saltstack) - `systemD` OS - Cloud Agnostique
 * [matchbox](https://github.com/coreos/matchbox) - CoreOS - Network boot and provision Container Linux clusters (e.g. etcd3, Kubernetes, more).
-* [RKE](https://github.com/rancher/rke) - OS Agnostique - Cloud Agnostique - [Apache-2.0](https://github.com/rancher/rke/blob/master/LICENSE)
 
-Main Resources
+主要资源
 =======================================================================
 
-*Official resources from the Kubernetes team*
+*Kubernetes团队的官方资源*
 
 * [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 * [Kubernetes Source](https://github.com/kubernetes/kubernetes/)
 * [Kubernetes Troubleshooting](https://kubernetes.io/docs/tasks/debug-application-cluster/troubleshooting/)
 
-Release Notes
+版本发布
 =======================================================================
 
-*Official release notes from the Kubernetes team on Stable Kubernetes Releases*
+*Kubernetes团队在Stable Kubernetes发布的官方发布说明*
 
 * [Kubernetes-1.9](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.9.md)
 * [Kubernetes-1.8](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.8.md)
@@ -208,10 +202,10 @@ Release Notes
 * [Kubernetes-1.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.2.md)
 
 
-Useful Articles
+有用的文章
 =======================================================================
 
-*A piece of writing included with others in a newspaper, magazine, or other publication*
+*在博客、自媒体站点发布的Kubernetes技术文章*
 
 * [Installation on Centos 7](http://severalnines.com/blog/installing-kubernetes-cluster-minions-centos7-manage-pods-services)
 *  [Packaging Multiple Resources together](http://blog.arungupta.me/kubernetes-application-package-multiple-resources-together/)
@@ -276,9 +270,8 @@ Useful Articles
 * [Choosing a CNI Provider for Kubernetes](http://chrislovecnm.com/kuberentes/cni/choosing-a-cni-provider/?1234) by [Chris Love](https://twitter.com/chrislovecnm)
 * [Enable IPv6 on Kubernetes with Project Calico](https://www.projectcalico.org/enable-ipv6-on-kubernetes-with-project-calico/) by [Valentin Ouvrard](https://twitter.com/Valentin_NC)
 * [Kubernetes in IPV6-only](https://opsnotice.xyz/kubernetes-ipv6-only/) by [Valentin Ouvrard](https://twitter.com/Valentin_NC)
-* [Kubernetes and everything else - Introduction to Kubernetes and it's context](https://rinormaloku.com/introduction-application-architecture/) by [Rinor Maloku](https://twitter.com/rinormaloku)
 
-Managed Kubernetes
+管理 Kubernetes
 =======================================================================
 
   - [Platform9](http://platform9.com)
@@ -287,11 +280,10 @@ Managed Kubernetes
   - [Eldarion Cloud](http://eldarion.cloud/)
   - [StackPoint Cloud](http://stackpoint.io/)
   - [Kubermatic](http://www.loodse.com//)
-  - [Hasura](https://hasura.io/)
   - [Rancher](https://rancher.com/)
 
 
-  ### [Developer Platform](#developer-platform)
+  ### [开发平台](#developer-platform)
 
   - [Fabric8](http://fabric8.io)
    - [Spring Cloud integration](https://github.com/fabric8io/spring-cloud-kubernetes)
@@ -300,7 +292,7 @@ Managed Kubernetes
   - [VAMP](http://vamp.io)
 
 
-  ### [Enterprise Kubernetes Products](#enterprise-kubernetes-products)
+  ### [企业级Kubernetes产品](#enterprise-kubernetes-products)
 
   - [CoreOS Tectonic](http://tectonic.com)
   - [OpenShift - Container Platform](http://www.openshift.com/container-platform/index.html)
@@ -308,17 +300,16 @@ Managed Kubernetes
   - [Kubermatic](http://www.loodse.com/)
   - [Canonical Distribution of Kubernetes - CDK](https://www.ubuntu.com/kubernetes)
 
-  ### [Public/Private Cloud](#publicprivate-cloud)
+  ### [私有公有云](#publicprivate-cloud)
 
    - [GCE](https://cloud.google.com/compute/) - Google Compute Engine [default]
    - [GKE](https://cloud.google.com/container-engine/) - Google Kubernetes Engine
    - [AWS](http://aws.amazon.com/ec2) - Amazon EC2
    - [Azure](https://azure.microsoft.com/en-in/) - Microsoft Azure
-   - [Azure AKS](https://docs.microsoft.com/en-us/azure/aks/) - Azure Container Service
    - [Vsphere](http://www.vmware.com/products/vsphere.html) - VMWare VSphere
    - [Rackspace](https://www.rackspace.com/en-in) - Rackspace
 
-  ### [Paas](#paas)
+  ### [Paas平台](#paas)
 
    *Kubernetes Platform as a Service providers*
 
@@ -330,20 +321,19 @@ Managed Kubernetes
   - [OpenShift Origin](http://www.openshift.org/)
   - [Eldarion Cloud](http://eldarion.cloud)
   - [IBM Bluemix Container Service](http://www.ibm.com/cloud-computing/bluemix/containers)
-  - [Hasura](http://www.hasura.io)
 
 
-Interactive Learning Environments
+交互式学习环境
 =======================================================================
 
-*Learn Kubernetes using an interactive environment without requiring downloads or configuration*
+*使用交互式环境学习Kubernetes，无需下载或配置*
 
 * [Katacoda](http://www.katacoda.com/courses/kubernetes)
-* [Play with Kubernetes][http://labs.play-with-k8s.com/] - Temporarily Down
+* [Play with Kubernetes](http://labs.play-with-k8s.com/)
 * [Kubernetes Bootcamp](http://kubernetesbootcamp.github.io/kubernetes-bootcamp/)
 
 
-MOOC Courses / Tutorials
+MOOC课程/教程
 =======================================================================
 
 *List of available free online courses([MOOC](https://en.wikipedia.org/wiki/Massive_open_online_course)) and tutorials*
@@ -359,7 +349,7 @@ MOOC Courses / Tutorials
   - [Kubernetes By Example by OpenShift Team](http://kubernetesbyexample.com)
   - [Kubernetes Tutorial by Tutorialspoint](http://www.tutorialspoint.com/kubernetes/)
 
-Case Studies
+实例探究
 =======================================================================
 
 *Study of Various different case studies*
@@ -372,7 +362,7 @@ Case Studies
 * [Kubernetes at Github](http://githubengineering.com/kubernetes-at-github/)
 * [Kubernetes the hard way (installation from scratch)](http://github.com/kelseyhightower/kubernetes-the-hard-way/)
 
-Persistent Volume Providers
+持久卷提供者
 =======================================================================
 
 *List of some Persistent Volume Providers for Kubernetes.Check out [Persistent Volume Providers](https://github.com/kubernetes/kubernetes/tree/master/examples/persistent-volume-provisioning) for more info*
@@ -386,11 +376,10 @@ Persistent Volume Providers
 * [QuoByte](http://www.quobyte.com/)
 * [Kube-Aliyun](https://github.com/kubeup/kube-aliyun)
 * [Portworx](http://portworx.com/)
-* [Stork](https://github.com/libopenstorage/stork)
 * [OpenEBS](http://github.com/openebs/openebs/)
 * [StorageOS](http://storageos.com)
 
-Developer Libraries/ Scripts
+开发人员库/脚本
 =======================================================================
 
 *List of some libraries & scripts for executions and good referrals*
@@ -403,13 +392,13 @@ Developer Libraries/ Scripts
 
    - [Jenkinsfile with Helm, Go, Docker, Kubectl, JNLP](https://github.com/lachie83/croc-hunter/blob/master/Jenkinsfile)
 
-Projects
+项目
 =======================================================================
 
 *Kubernetes-related projects that you might find helpful*
 
 
-## Related Software
+## 相关软件
 
 *Projects built to make life with Kubernetes even better, more powerful, more scalable*
 
@@ -432,6 +421,7 @@ Projects
 ## Package Managers
 
 * [Helm](http://helm.sh)
+* [KPM](https://github.com/coreos/kpm)
 
 ## Monitoring Services
 
@@ -439,9 +429,8 @@ Projects
 
 * [Console](https://github.com/kubernetes/dashboard)
 * [Datadog](http://www.datadoghq.com/)
-* [eventrouter](https://github.com/heptiolabs/eventrouter) - simple introspective kubernetes service that forwards events to a specified sink.
-* [Grafana Kubernetes App](https://github.com/grafana/kubernetes-app)
 * [Heapster](https://github.com/kubernetes/heapster)
+* [Kube-ui](https://github.com/kubernetes/kube-ui)
 * [Kubebox](https://github.com/astefanutti/kubebox) - Terminal console for Kubernetes
 * [Kubedash](https://github.com/kubernetes/kubedash)
 * [Kubernetes Operational View](https://github.com/hjacobs/kube-ops-view) - read-only system dashboard for multiple K8s clusters
@@ -458,10 +447,9 @@ Projects
 
 *Test your applications running on Kubernetes*
 
-* [kube-monkey](https://github.com/asobti/kube-monkey) - Chaos Monkey for Kubernetes clusters
+* [kube-monkey](https://github.com/asobti/kube-monkey)
 * [k8s-testsuite](https://github.com/mrahbar/k8s-testsuite) - Helm chart for network and loadtesting of a Kubernetes cluster
 * [Test-Infra](https://github.com/kubernetes/test-infra)
-* [Sonobuoy](https://github.com/heptio/sonobuoy) - Diagnostic tool that runs Kubernetes conformance tests
 * [PowerfulSeal](https://github.com/bloomberg/powerfulseal) - kills targeted pods and machines to test your software reliability
 
 ## Continuous Delivery
@@ -474,7 +462,6 @@ Projects
    * [On-demand Jenkins slaves with Kubernetes and the Google Container Engine](http://www.cloudbees.com/blog/demand-jenkins-slaves-kubernetes-and-google-container-engine)
    * [Jenkins setups for Kubernetes and Docker Workflow](http://iocanel.blogspot.in/2015/09/jenkins-setups-for-kubernetes-and.html)
    * [Lab: Build a Continuous Deployment Pipeline with Jenkins and Kubernetes](https://github.com/GoogleCloudPlatform/continuous-deployment-on-kubernetes)
-* [Jenkins X](http://jenkins-x.io/) - CI/CD for Kubernetes using Jenkins
 * [kb8or](https://github.com/UKHomeOffice/kb8or)
 * [Wercker](http://blog.wercker.com/topic/kubernetes)
 * [Shippable](http://blog.shippable.com/topic/kubernetes)
@@ -483,10 +470,6 @@ Projects
 * [Kit](http://invisionapp.github.io/kit/)
 * [Spinnaker](http://www.spinnaker.io/blog/deploy-to-kubernetes-using-spinnaker)
 * [CircleCI](http://www.alexecollins.com/continuous-delivery-with-kubernetes-and-circleci/)
-* [KubeCI](https://www.kubeci.io/)
-* [Vili](https://github.com/airware/vili)
-* [Keel](https://keel.sh/)
-* [Apollo](https://github.com/logzio/apollo) - Open Source application providing teams with self service UI for creating and deploying their services to Kubernetes.
 
 ## Serverless Implementations
 
@@ -498,7 +481,6 @@ Projects
 * [OpenFaaS](https://github.com/alexellis/faas)
 * [FaaS-netes](https://github.com/alexellis/faas-netes)
 * [Nuclio](https://github.com/nuclio/nuclio)
-* [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) - Allows nodes to be backed by other services and providers.
 
 ## Operators
 
@@ -524,6 +506,7 @@ Projects
 * [Scheduler](https://github.com/kelseyhightower/scheduler) - Cost based scheduler
 * [Sticky Node Scheduler](https://github.com/philipn/kubernetes-sticky-node-scheduler)
 * [ksched](https://github.com/coreos/ksched) - Experimental flow based scheduler
+* [kronjob](https://github.com/Eneco/kronjob) - Recurring jobs
 * [escheduler](https://github.com/agonzalezro/escheduler) - Written in elixir
 * [bashScheduler](https://github.com/rothgar/bashScheduler) - Written in bash
 
@@ -552,7 +535,6 @@ Projects
 * [Crate](http://crate.io/docs/scale/kubernetes/)
 * [Minio](http://minio.io)
 * [Vitess](http://vitess.io/) - Horizontal scaling of MySql by Youtube
-* [RDS](https://github.com/sorenmat/k8s-rds) - Provision RDS databases via CRD from Kubernetes
 
 ## Networking
 
@@ -567,13 +549,13 @@ Projects
 * [Kube-router](http://github.com/cloudnativelabs/kube-router)
 * [Cilium](https://github.com/cilium/cilium)
 * [Linen](https://github.com/John-Lin/linen-cni)
+* [Multu](https://github.com/Intel-Corp/multus-cni)
 * [CNI-Genie](https://github.com/Huawei-PaaS/CNI-Genie)
 * [Romana](http://romana.io/)
 * [Infoblox](https://github.com/infobloxopen/cni-infoblox)
 * [External DNS](https://github.com/kubernetes-incubator/external-dns) - To control DNS records dynamically via Kube resources
 * [cni-ipvlan-vpc-k8s](https://github.com/lyft/cni-ipvlan-vpc-k8s)
 * [kubernetes-network-policy-recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
-* [Multus-cni](https://github.com/Intel-Corp/multus-cni) - Multi-homed pod cni
 
 ## Service mesh
 
@@ -627,7 +609,6 @@ Projects
 * [Vikube](https://github.com/c9s/vikube.vim) - Kubernetes operations from Vim, in Vim
 * [kube-ps1](https://github.com/jonmosco/kube-ps1) - Kubernetes prompt helper for bash and zsh.
 * [kubensx](https://github.com/shyiko/kubensx) - Simpler Cluster/User/Namespace switching for Kubernetes (featuring interactive mode and wildcard/fuzzy matching).
-* [stern](https://github.com/wercker/stern) - Multi pod and container log tailing
 
 ## Application deployment orchestration
 
@@ -640,8 +621,6 @@ Projects
 * [Deployment manager](https://cloud.google.com/deployment-manager/)
 * [Psykube](https://github.com/commercialtribe/psykube)
 * [Brigade](https://github.com/Azure/brigade) - Event Based Scripting using JavaScript
-* [Skaffold](https://github.com/GoogleCloudPlatform/skaffold) - Command line tool that facilitates continuous development for Kubernetes applications.
-* [Gitkube](https://gitkube.sh/) - Build and deploy docker images on Kubernetes using `git push`.
 
 ## Configuration
 
@@ -653,7 +632,6 @@ Projects
 * [Konfd](https://github.com/kelseyhightower/konfd)
 * [kenv](https://github.com/thisendout/kenv)
 * [kubediff](https://github.com/weaveworks/kubediff)
-* [thesus](https://github.com/heptiolabs/theseus) - A command-line utility and importable package for comparing sets of Kubernetes objects
 * [Habitat](http://www.habitat.sh/docs/best-practices/#kubernetes)
 * [Puppet](http://forge.puppet.com/garethr/kubernetes/readme)
 * [Ansible](http://docs.ansible.com/ansible/kubernetes_module.html)
@@ -668,18 +646,16 @@ Projects
 * [Sysdig Falco](http://www.sysdig.org/falco/)
 * [Sysdig Secure](http://www.sysdig.com/product/secure)
 * [Kubesec.io](http://kubesec.io/)
-* [Authenticator](https://github.com/heptio/authenticator) - A tool for using AWS IAM credentials to authenticate to a Kubernetes cluster
+
 
 ## Load balancing
 
 * [Nginx Plus](http://www.nginx.com/blog/load-balancing-kubernetes-services-nginx-plus/)
 * [Traefik](http://traefik.io/)
-* [MetalLB](https://metallb.universe.tf/) - load-balancer implementation for bare metal Kubernetes clusters, using standard routing protocols.
 * [AppsCode Voyager - Secure HAProxy based Ingress Controller](https://github.com/appscode/voyager)
 * [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx)
 * [F5 Big IP Controller](https://github.com/F5Networks/k8s-bigip-ctlr)
 * [HAProxy Ingress](https://github.com/jcmoraisjr/haproxy-ingress)
-* [Cloudflare Warp Ingress](https://github.com/cloudflare/cloudflare-ingress-controller)
 
 ## Big Data
 
@@ -702,7 +678,7 @@ Projects
 ## Operating System
 
 * [CoreOS](http://coreos.com)
-* [Kurma](https://github.com/apcera/kurma)
+* [Kurma](http://kurma.io)
 * [GCI](https://cloud.google.com/container-optimized-os/docs/)
 
 ## YAML/JSON Config
@@ -714,10 +690,6 @@ Projects
 ## Tuning
 
 * [Ktune](https://github.com/skippbox/ktune)
-
-## Backup and Disaster Recovery
-
-* [Ark](https://github.com/heptio/ark) - Utility for managing backup and restore of Kubernetes clusters.
 
 Raspberry Pi
 =======================================================================
@@ -738,14 +710,13 @@ us with information*
 * [Docker and Kubernetes Under the Hood](http://item.jd.com/11757034.html) (Chinese) by [Harry Zhang](https://twitter.com/resouer), Jianbo Sun and ZJU SEL lab
 * [Kubernetes: Scheduling the Future at Cloud Scale](http://www.oreilly.com/webops-perf/free/kubernetes.csp) by [Dave K. Rensin](http://www.linkedin.com/in/drensin)
 * [Kubernetes in Action](http://www.manning.com/books/kubernetes-in-action) by [Marko Lukša](https://twitter.com/markoluksa)
-* [Kubernetes Cookbook - Second Edition](https://www.packtpub.com/virtualization-and-cloud/kubernetes-cookbook-second-edition) by Hideto Saito, Hui-Chuan Chloe Lee, Ke-Jou Carol Hsu
+* [Kubernetes Cookbook](http://www.packtpub.com/virtualization-and-cloud/kubernetes-cookbook) by Hideto Saito, Hui-Chuan Chloe Lee, Ke-Jou Carol Hsu
 * [Getting Started with Kubernetes](http://shop.oreilly.com/product/9781784394035.do) by Jonathan Baier
 * [Kubernetes Handbook](https://github.com/feiskyer/kubernetes-handbook) (OpenSource Book in Chinese) by [Pengfei Ni](https://github.com/feiskyer)
 * [Mastering Kubernetes](https://www.amazon.com/Mastering-Kubernetes-Gigi-Sayfan/dp/1786461005) by [Gigi Sayfan](https://github.com/the-gigi)
 * [OpenShift in Action](http://www.manning.com/books/openshift-in-action) by [Jamie Duncan](https://twitter.com/rh_jduncan) & [John Osborne](https://www.linkedin.com/in/johnfosborneiii/)
 * [The DevOps 2.3 Toolkit: Kubernetes](https://leanpub.com/the-devops-2-3-toolkit) by [Viktor Farcic](https://twitter.com/vfarcic)
-* [Kubernetes Handbook](https://github.com/rootsongjc/kubernetes-handbook) (OpenSource Book in Chinese) by [Jimmy Song](https://github.com/rootsongjc)
-* [DevOps with Kubernetes](https://www.packtpub.com/virtualization-and-cloud/devops-kubernetes) by Hideto Saito, Hui-Chuan Chloe Lee, Cheng-Yang Wu
+
 
 Slide Presentations
 =======================================================================
@@ -814,6 +785,7 @@ Interesting Twitter Accounts
 * [Skippbox](https://twitter.com/skippbox) - Acquired by [Bitnami](https://bitnami.com/news/press-releases/bitnami-acquires-skippbox)
 * [Sysdig](https://twitter.com/sysdig)
 
+
 Amazing People
 =======================================================================
 * [Ahmet Alp Balkan](https://twitter.com/ahmetb),  Software Engineer at Google & Google Kubernetes Engine
@@ -850,10 +822,6 @@ Meetup Groups
 * [London](https://www.meetup.com/Kubernetes-London/)
 * [Hong Kong](https://www.meetup.com/Kubernetes-Hong-Kong/)
 * [Worldwide](https://www.meetup.com/kubernauts/)
-* [Amsterdam](https://www.meetup.com/de-DE/Amsterdam-Kubernetes-Meetup/)
-* [Munich](https://www.meetup.com/de-DE/Munchen-Kubernetes-Meetup/)
-* [Hamburg](https://www.meetup.com/de-DE/Hamburg-Kubernetes-Meetup/)
-* [Seattle](https://www.meetup.com/Seattle-Kubernetes-Meetup/)
 
 
 Connecting with Kubernetes
@@ -881,7 +849,6 @@ Conferences
 * [GCP Next](http://cloudnext.withgoogle.com/)
 * [Docker Con](http://dockercon.com)
 * [Devoxx](http://devoxx.com)
-* [ContainerDays](https://containerdays.io/)
 
 
 Contributing
